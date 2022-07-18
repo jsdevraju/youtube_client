@@ -1,0 +1,1 @@
+export const apiEndPoint = process.env.NEXT_PUBLIC_CLIENT_API_URL;
