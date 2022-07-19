@@ -1,0 +1,60 @@
+.container{
+    flex: 1;
+    background-color: var(--bg-color);
+    height: 100vh;
+    color: var(--white-color);
+    position: sticky;
+    top: 0;
+}
+
+.wrapper{
+    padding: 1.1em 1.3em;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 1.25em;
+}
+
+.logo img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    padding: 7.5px 0px;
+    transition: 0.3s ease-in-out;
+}
+
+.item:hover{
+    background-color: #373737;
+}
+
+.active{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    padding: 7.5px 0px;
+    transition: 0.3s ease-in-out;
+    background-color: #373737;
+}
+
+
+.hr{
+    margin: 15px 0px;
+    border: 0.5px solid #373737;
+}
+
+.login p{
+    font-size: 0.8em;
+    margin-bottom: 0.7em;
+    color: #ddd;
+}

@@ -1,0 +1,23 @@
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(95vh - 56px);
+    color: var(--white-color);
+}
+
+.container {
+    box-shadow: 0px 5px 5px 5px #24242494;
+    padding: 1.5em;
+    border-radius: 8px;
+    width: 550px;
+}
+
+.footer{
+    margin-top: 1em;
+}
+.logintext a{
+    color: #ddd;
+    margin-left: 0.1em;
+}

@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    gap: 10px;
+    margin: 30px 0px;
+}
+
+.avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--white-color);
+}
+
+.details .name{
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.details .date{
+    font-weight: 400;
+    color: #999;
+    font-size: 0.7em;
+}
+
+.details p{
+    font-size: 0.8em;
+}

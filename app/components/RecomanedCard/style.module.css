@@ -1,0 +1,43 @@
+.container{
+    width: 360px;
+    margin-bottom: 45px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.container img{
+    width: 51%;
+    height: 120px;
+    background-color: #999;
+    object-fit: cover;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+}
+
+.texts{
+    display: flex;
+    flex-direction: column;
+}
+
+.details  h1{
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+.details h2{
+    font-size: 14px;
+    color: #999;
+    margin: 5px 0px;
+    font-weight: 500;
+}
+
+.info{
+    color: #999;
+    font-size: 0.8em;
+}

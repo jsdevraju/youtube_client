@@ -7,8 +7,7 @@ interface IProps {
   data:VideoProps[]
 }
 
-const Home:React.FC<IProps> = ({data}) => {
-  console.log(data)
+const Explore:React.FC<IProps> = ({data}) => {
   return (
     <>
       <div className={styles.flexWrapper}>
@@ -21,11 +20,11 @@ const Home:React.FC<IProps> = ({data}) => {
 };
 
 export const getServerSideProps = async () => {
-  const { data } = await axios.get(`${apiEndPoint}/video/random`);
+  const { data } = await axios.get(`${apiEndPoint}/video/trend`);
   return {
     props: { data: data?.videos }
   }
 }
 
 
-export default Home;
+export default Explore;

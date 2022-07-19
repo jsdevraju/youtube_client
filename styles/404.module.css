@@ -1,0 +1,12 @@
+.error{
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 89vh;
+}
+
+.error img{
+    margin-bottom: 1em;
+}

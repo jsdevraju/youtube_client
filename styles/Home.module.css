@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+}
+
+.main{
+    flex: 7;
+    background-color: var(--bg-color);
+}
+
+.wrapper{
+    padding: 22px 96px;
+}
