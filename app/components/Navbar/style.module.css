@@ -34,3 +34,9 @@
     background-color: transparent;
     color: #fff;
 }
+
+@media (max-width:550px){
+    .search{
+        left: -160px;
+    }
+}

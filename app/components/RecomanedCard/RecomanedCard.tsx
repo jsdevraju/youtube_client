@@ -1,25 +1,27 @@
-import { useRouter } from "next/router";
-import React from "react";
-import styles from "./style.module.css";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { apiEndPoint, VideoProps } from "../../../utils";
+import SmallCard from "./SmallCard";
 
-const RecommendCard = () => {
-  const router = useRouter();
+interface IProps {
+  tags?: string[];
+}
+
+const RecommendCard: React.FC<IProps> = ({ tags }) => {
+  const [videos, setVideos] = useState<VideoProps[]>();
+
+  useEffect(() => {
+    const fetchVideos = async () => {
+      const res = await axios.get(`${apiEndPoint}/video/tags?tags=${tags}`);
+      setVideos(res.data);
+    };
+    fetchVideos();
+  }, [tags]);
 
   return (
     <>
-      <div className={styles.container} onClick={() => router.push("/watch/he")}>
-        <img
-          src="https://cdn.pixabay.com/photo/2022/06/20/07/32/dirt-road-7273240_960_720.jpg"
-          alt="Razu Islam"
-        />
-        <div className={styles.details}>
-          <div className={styles.texts}>
-            <h1>Test video</h1>
-            <h2>Razu islam</h2>
-          </div>
-          <div className={styles.info}>120 views . 10 hours ago</div>
-        </div>
-      </div>
+      {videos &&
+        videos?.map((video) => <SmallCard key={video._id} video={video} />)}
     </>
   );
 };

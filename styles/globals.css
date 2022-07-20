@@ -72,6 +72,10 @@ body{
   color: var(--white-color);
 }
 
+.minInput{
+  border-color: #373737;
+}
+
 .error{
   color: #df1414;
 }

@@ -1,7 +1,7 @@
 import * as Yup from "yup";
 
 export const loginValidate = Yup.object({
-    email: Yup.string().email("Email is invalid").required("Email is require"),
+    name: Yup.string().min(3, "Name at least 8 characters").max(15, "Name less then 15 characters").required("Name is require"),
     password: Yup.string()
       .min(8, "Password at least 8 characters")
       .max(32, "Password less then 32 characters")

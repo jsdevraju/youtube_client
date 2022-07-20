@@ -1,0 +1,21 @@
+.upload{
+    color: var(--white-color);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 88vh;
+}
+
+.wrapper{
+    width: 550px;
+}
+
+
+.wrapper h1{
+    text-align: center;
+    margin-bottom: 1.5em;
+}

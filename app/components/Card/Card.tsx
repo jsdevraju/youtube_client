@@ -27,7 +27,7 @@ const Card: React.FC<IProps> = ({ video }) => {
     <>
       <div
         className={styles.container}
-        onClick={() => router.push("/watch/he")}
+        onClick={() => router.push(`/watch/${video._id}`)}
       >
         <img src={video.imgUrl} alt={video.title} />
         <div className={styles.details}>

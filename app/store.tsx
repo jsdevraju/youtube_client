@@ -1,5 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import auth, { setAuth } from "./redux/auth";
+import video from "./redux/video";
 import { Provider } from "react-redux";
 import axios from "axios";
 import React, { useEffect } from "react";
@@ -13,7 +14,8 @@ interface IProps {
 //Create Our Store
 const store = configureStore({
   reducer: {
-    auth
+    auth,
+    video
   },
   devTools: process.env.NODE_ENV !== 'production',
 });
@@ -40,7 +42,7 @@ const StoreProvider = ({ children }: IProps) => {
       if (res?.data?.message?.includes("invalid token")) {
         return new Promise((response, reject) => {
           axios
-            .get(`${apiEndPoint}/logout`)
+            .get(`${apiEndPoint}/auth/logout`)
             .then(({ data }) => {
               store.dispatch(setAuth(data));
               localStorage.clear();
@@ -58,5 +60,7 @@ const StoreProvider = ({ children }: IProps) => {
 
   return <Provider store={store}>{children}</Provider>;
 };
+
+export type RootState = ReturnType<typeof store.getState>
 
 export default StoreProvider;
