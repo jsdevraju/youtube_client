@@ -20,10 +20,10 @@ export interface VideoProps {
 export interface SingleVideoProps{
   createdAt: string
   description:string
-  dislikes?: string[]
+  dislikes: string[]
   imgUrl: string
-  likes?:string[]
-  tags?: string[]
+  likes:string[]
+  tags: string[]
   title: string
   updatedAt: string
   userId: string
