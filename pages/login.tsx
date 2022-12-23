@@ -14,7 +14,7 @@ import styles from "../styles/form.module.css";
 import { apiEndPoint } from "../utils";
 import cookie from 'js-cookie'
 import { FcGoogle } from 'react-icons/fc'
-import { googleApi } from "react-firebase-lib";
+import { googleApi } from "../app/firebase";
 import { auth, providerGoogle } from "../firebase";
 import { useRouter } from "next/router";
 import Loader from "../app/components/Loader/Loader";

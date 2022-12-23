@@ -2201,16 +2201,6 @@ react-fast-compare@^2.0.1:
   resolved "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-2.0.4.tgz"
   integrity sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw==
 
-react-firebase-lib@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/react-firebase-lib/-/react-firebase-lib-0.0.3.tgz#317f94fad7444f6f2b0c15ce605e35b9b1abdbcc"
-  integrity sha512-n7bBQQ+wRUrfB9zasHL4CLpiOq6eqLCVccyUe6XmzKX5omWL6yvlYPi/s5XxIUCzJwHYY2R4bK7hvA8gNaN7xg==
-  dependencies:
-    firebase "^9.9.0"
-    next "12.2.2"
-    react "18.2.0"
-    react-dom "18.2.0"
-
 react-hot-toast@^2.3.0:
   version "2.3.0"
   resolved "https://registry.npmjs.org/react-hot-toast/-/react-hot-toast-2.3.0.tgz"

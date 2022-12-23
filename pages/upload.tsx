@@ -2,7 +2,7 @@ import axios from "axios";
 import { GetServerSideProps } from "next";
 import { useRouter } from "next/router";
 import React, { ChangeEvent, FormEvent, useEffect, useState } from "react";
-import { uploadFiles } from "react-firebase-lib";
+import { uploadFiles } from "../app/firebase";
 import toast from "react-hot-toast";
 import { useSelector } from "react-redux";
 import Button from "../app/components/Button/Button";
